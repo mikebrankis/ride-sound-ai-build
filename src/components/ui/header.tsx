@@ -7,9 +7,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow">
-              <Music className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img 
+              src="/lovable-uploads/c1bc1287-fefa-4674-86c1-5208308a2a44.png" 
+              alt="Ride Sounds Chicago Logo" 
+              className="w-12 h-12 drop-shadow-lg"
+            />
             <div>
               <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 Ride Sounds
