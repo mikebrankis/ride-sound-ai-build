@@ -1,12 +1,56 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/ui/header";
+import HeroSection from "@/components/audio-designer/hero-section";
+import AIDesigner from "@/components/audio-designer/ai-designer";
+import ServicesSection from "@/components/audio-designer/services-section";
+import ContactSection from "@/components/audio-designer/contact-section";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <HeroSection />
+        <AIDesigner />
+        <ServicesSection />
+        <ContactSection />
+      </main>
+      
+      {/* Footer */}
+      <footer className="bg-muted/50 border-t border-border py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+              <h3 className="font-bold text-lg mb-4 bg-gradient-primary bg-clip-text text-transparent">
+                Ride Sounds Chicago
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Chicago's premier car audio specialists. Transforming vehicles with 
+                cutting-edge audio technology since 2008.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#services" className="hover:text-primary transition-colors">Services</a></li>
+                <li><a href="#designer" className="hover:text-primary transition-colors">AI Designer</a></li>
+                <li><a href="#contact" className="hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Gallery</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Contact Info</h4>
+              <div className="space-y-2 text-sm text-muted-foreground">
+                <p>1234 North Audio Street</p>
+                <p>Chicago, IL 60601</p>
+                <p className="text-primary font-medium">(773) 555-0123</p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+            <p>&copy; 2024 Ride Sounds Chicago. All rights reserved. Built with AI technology.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
