@@ -59,28 +59,28 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
           {services.map((service, index) => (
             <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all hover:shadow-card group">
-              <CardHeader>
+              <CardHeader className="pb-4">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:shadow-glow transition-all">
                   <service.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
+                <CardTitle className="text-lg xl:text-xl mb-2">{service.title}</CardTitle>
                 <p className="text-muted-foreground text-sm">{service.description}</p>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-4">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="text-sm flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full" />
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold text-primary">{service.price}</span>
-                  <Button variant="outline" size="sm" className="hover:border-primary hover:text-primary">
+                  <span className="font-semibold text-primary text-sm xl:text-base">{service.price}</span>
+                  <Button variant="outline" size="sm" className="hover:border-primary hover:text-primary text-xs xl:text-sm">
                     Learn More
                   </Button>
                 </div>

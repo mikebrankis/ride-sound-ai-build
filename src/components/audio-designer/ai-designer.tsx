@@ -100,7 +100,7 @@ const AIDesigner = () => {
               {/* Step 1: Vehicle Information */}
               {step === 1 && (
                 <div className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     <div>
                       <Label htmlFor="year">Year</Label>
                       <Input
@@ -262,29 +262,29 @@ const AIDesigner = () => {
                           Recommended System for {vehicleInfo.year} {vehicleInfo.make} {vehicleInfo.model}
                         </h3>
                         
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                           <div>
                             <h4 className="font-semibold mb-3">Recommended Components:</h4>
                             <ul className="space-y-2 text-sm">
-                              <li className="flex justify-between">
-                                <span>• Pioneer AVH-W4500NEX Head Unit</span>
-                                <span className="text-primary">$599</span>
+                              <li className="flex justify-between items-start">
+                                <span className="flex-1">• Pioneer AVH-W4500NEX Head Unit</span>
+                                <span className="text-primary ml-2">$599</span>
                               </li>
-                              <li className="flex justify-between">
-                                <span>• JL Audio C2-650X Speakers (4)</span>
-                                <span className="text-primary">$280</span>
+                              <li className="flex justify-between items-start">
+                                <span className="flex-1">• JL Audio C2-650X Speakers (4)</span>
+                                <span className="text-primary ml-2">$280</span>
                               </li>
-                              <li className="flex justify-between">
-                                <span>• Alpine MRV-F300 Amplifier</span>
-                                <span className="text-primary">$299</span>
+                              <li className="flex justify-between items-start">
+                                <span className="flex-1">• Alpine MRV-F300 Amplifier</span>
+                                <span className="text-primary ml-2">$299</span>
                               </li>
-                              <li className="flex justify-between">
-                                <span>• Rockford Fosgate P1S4-10 Subwoofer</span>
-                                <span className="text-primary">$149</span>
+                              <li className="flex justify-between items-start">
+                                <span className="flex-1">• Rockford Fosgate P1S4-10 Subwoofer</span>
+                                <span className="text-primary ml-2">$149</span>
                               </li>
-                              <li className="flex justify-between border-t pt-2 font-semibold">
-                                <span>Installation & Materials</span>
-                                <span className="text-primary">$450</span>
+                              <li className="flex justify-between items-start border-t pt-2 font-semibold">
+                                <span className="flex-1">Installation & Materials</span>
+                                <span className="text-primary ml-2">$450</span>
                               </li>
                             </ul>
                           </div>
@@ -302,16 +302,16 @@ const AIDesigner = () => {
                           </div>
                         </div>
                         
-                        <div className="flex items-center justify-between mt-6 pt-4 border-t">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 pt-4 border-t gap-4">
                           <div>
                             <div className="text-2xl font-bold text-primary">Total: $1,777</div>
                             <div className="text-sm text-muted-foreground">Installation included</div>
                           </div>
-                          <div className="flex gap-3">
-                            <Button variant="outline" onClick={() => setStep(1)}>
+                          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+                            <Button variant="outline" onClick={() => setStep(1)} className="w-full sm:w-auto">
                               Start Over
                             </Button>
-                            <Button className="bg-gradient-primary hover:shadow-glow transition-all">
+                            <Button className="bg-gradient-primary hover:shadow-glow transition-all w-full sm:w-auto">
                               <DollarSign className="w-4 h-4 mr-2" />
                               Get Official Quote
                             </Button>

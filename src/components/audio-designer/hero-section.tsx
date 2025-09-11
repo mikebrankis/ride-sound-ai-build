@@ -17,14 +17,14 @@ const HeroSection = () => {
       </div>
       
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl">
-          <Badge className="mb-6 bg-primary/20 text-primary border-primary/30">
+      <div className="container mx-auto px-4 py-8 relative z-10">
+        <div className="max-w-4xl text-center sm:text-left">
+          <Badge className="mb-4 sm:mb-6 bg-primary/20 text-primary border-primary/30 inline-flex">
             <Zap className="w-4 h-4 mr-2" />
             AI-Powered System Designer
           </Badge>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Transform Your
             <span className="block bg-gradient-primary bg-clip-text text-transparent">
               Car Audio
@@ -32,47 +32,47 @@ const HeroSection = () => {
             Experience
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
+          <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
             Chicago's premier car audio specialists. Our AI designer creates custom audio systems 
             tailored to your vehicle, preferences, and budget. Get professional installation 
             estimates instantly.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 mb-8 md:mb-12">
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:shadow-glow transition-all transform hover:scale-105 px-8 py-4 text-lg"
+              className="bg-gradient-primary hover:shadow-glow transition-all transform hover:scale-105 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
             >
               Design My System
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-primary/50 text-primary hover:bg-primary/10 px-8 py-4 text-lg"
+              className="border-primary/50 text-primary hover:bg-primary/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
             >
               View Gallery
             </Button>
           </div>
           
           {/* Trust Indicators */}
-          <div className="flex flex-wrap gap-8 items-center">
-            <div className="flex items-center gap-3">
-              <Award className="w-6 h-6 text-accent" />
-              <div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            <div className="flex items-center gap-3 justify-center sm:justify-start">
+              <Award className="w-6 h-6 text-accent flex-shrink-0" />
+              <div className="text-center sm:text-left">
                 <div className="font-semibold">15+ Years</div>
                 <div className="text-sm text-muted-foreground">Experience</div>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <Shield className="w-6 h-6 text-accent" />
-              <div>
+            <div className="flex items-center gap-3 justify-center sm:justify-start">
+              <Shield className="w-6 h-6 text-accent flex-shrink-0" />
+              <div className="text-center sm:text-left">
                 <div className="font-semibold">Lifetime</div>
                 <div className="text-sm text-muted-foreground">Warranty</div>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <Zap className="w-6 h-6 text-accent" />
-              <div>
+            <div className="flex items-center gap-3 justify-center sm:justify-start">
+              <Zap className="w-6 h-6 text-accent flex-shrink-0" />
+              <div className="text-center sm:text-left">
                 <div className="font-semibold">1000+</div>
                 <div className="text-sm text-muted-foreground">Installs</div>
               </div>

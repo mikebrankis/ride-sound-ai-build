@@ -16,10 +16,10 @@ const Index = () => {
       </main>
       
       {/* Footer */}
-      <footer className="bg-muted/50 border-t border-border py-12">
+      <footer className="bg-muted/50 border-t border-border py-8 lg:py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 text-center sm:text-left">
+            <div className="sm:col-span-2 lg:col-span-1">
               <h3 className="font-bold text-lg mb-4 bg-gradient-primary bg-clip-text text-transparent">
                 Ride Sounds Chicago
               </h3>
@@ -46,7 +46,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+          <div className="border-t border-border mt-6 lg:mt-8 pt-6 lg:pt-8 text-center text-sm text-muted-foreground">
             <p>&copy; 2024 Ride Sounds Chicago. All rights reserved. Built with AI technology.</p>
           </div>
         </div>
