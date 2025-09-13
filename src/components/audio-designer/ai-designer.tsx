@@ -264,23 +264,23 @@ const AIDesigner = () => {
                         
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                           <div>
-                            <h4 className="font-semibold mb-3">Recommended Components:</h4>
+                            <h4 className="font-semibold mb-3">Recommended DS18 Components:</h4>
                             <ul className="space-y-2 text-sm">
                               <li className="flex justify-between items-start">
-                                <span className="flex-1">• Pioneer AVH-W4500NEX Head Unit</span>
-                                <span className="text-primary ml-2">$599</span>
+                                <span className="flex-1">• DS18 PRO-X6M 6.5" Midrange Speakers (4)</span>
+                                <span className="text-primary ml-2">$320</span>
                               </li>
                               <li className="flex justify-between items-start">
-                                <span className="flex-1">• JL Audio C2-650X Speakers (4)</span>
-                                <span className="text-primary ml-2">$280</span>
+                                <span className="flex-1">• DS18 GEN-X154D 15" Subwoofer</span>
+                                <span className="text-primary ml-2">$429</span>
                               </li>
                               <li className="flex justify-between items-start">
-                                <span className="flex-1">• Alpine MRV-F300 Amplifier</span>
-                                <span className="text-primary ml-2">$299</span>
+                                <span className="flex-1">• DS18 EXL-A2.3K 2300W Amplifier</span>
+                                <span className="text-primary ml-2">$399</span>
                               </li>
                               <li className="flex justify-between items-start">
-                                <span className="flex-1">• Rockford Fosgate P1S4-10 Subwoofer</span>
-                                <span className="text-primary ml-2">$149</span>
+                                <span className="flex-1">• DS18 PRO-TW220 Bullet Tweeters (2)</span>
+                                <span className="text-primary ml-2">$89</span>
                               </li>
                               <li className="flex justify-between items-start border-t pt-2 font-semibold">
                                 <span className="flex-1">Installation & Materials</span>
@@ -292,19 +292,19 @@ const AIDesigner = () => {
                           <div>
                             <h4 className="font-semibold mb-3">System Features:</h4>
                             <ul className="space-y-1 text-sm">
-                              <li>• Apple CarPlay & Android Auto</li>
-                              <li>• 4-channel amplification</li>
-                              <li>• 10" powered subwoofer</li>
-                              <li>• Custom sound tuning</li>
-                              <li>• Professional installation</li>
-                              <li>• 2-year warranty</li>
+                              <li>• DS18 Pro Series Performance</li>
+                              <li>• 2300W Max Power Output</li>
+                              <li>• 15" Competition Subwoofer</li>
+                              <li>• Bullet Tweeter Technology</li>
+                              <li>• Professional DS18 Installation</li>
+                              <li>• 2-year DS18 warranty</li>
                             </ul>
                           </div>
                         </div>
                         
                         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 pt-4 border-t gap-4">
                           <div>
-                            <div className="text-2xl font-bold text-primary">Total: $1,777</div>
+                            <div className="text-2xl font-bold text-primary">Total: $1,687</div>
                             <div className="text-sm text-muted-foreground">Installation included</div>
                           </div>
                           <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
